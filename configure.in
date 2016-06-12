@@ -1,0 +1,20 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT()
+AM_CONFIG_HEADER(src/lib/config.h)
+AC_CONFIG_AUX_DIR(config)
+AM_INIT_AUTOMAKE(mirror, 1.0)    
+AC_PROG_CC
+AC_CANONICAL_HOST
+AC_CANONICAL_TARGET
+AC_PROG_YACC
+AM_PROG_LEX
+AC_LIBTOOL_DLOPEN
+AC_LIBTOOL_WIN32_DLL
+AC_PROG_LIBTOOL
+
+AC_CHECK_LIB(dl,dlopen)
+my_libdir=$libdir
+AC_SUBST(my_libdir)
+
+AC_OUTPUT([Makefile src/Makefile src/bin/Makefile src/lib/Makefile 
+	src/lib/mirror_defs.h])

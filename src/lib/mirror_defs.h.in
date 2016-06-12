@@ -1,0 +1,8 @@
+#ifndef _MIRROR_DEFS_H_
+#define _MIRROR_DEFS_H_
+
+#define MM_DEFAULT_CLASS_PATH @my_libdir@/mirror/classes
+
+
+
+#endif

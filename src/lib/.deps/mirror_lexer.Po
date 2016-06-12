@@ -1,0 +1,3 @@
+mirror_lexer.o: mirror_lexer.c /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:
